@@ -1,0 +1,40 @@
+
+name:                                   data-unique
+version:                                20130920
+synopsis:                               operator& surrogate.
+category:                               Data, Concurrency
+
+cabal-version:                          >= 1.6
+build-type:                             Simple
+
+author:                                 Heka Treep
+maintainer:                             Heka Treep <zena.treep@gmail.com>
+homepage:                               https://github.com/treep/data-unique
+bug-reports:                            https://github.com/treep/data-unique/issues
+license:                                MIT
+license-file:                           license
+
+stability:                              Experimental
+cabal-version:                          >= 1.6
+build-type:                             Simple
+
+extra-source-files:                     Test.hs
+                                        Setup.hs
+                                        Makefile
+                                        readme.md
+
+source-repository                       head
+  type:                                 git
+  location:                             git://github.com/treep/data-unique.git
+
+library
+  ghc-options:                          -Wall
+  build-depends:                        base == 4.*,
+                                        mtl == 2.*,
+                                        stm == 2.*
+  exposed-modules:                      Data.Unique
+                                        Data.Unique.Internal
+                                        Data.Unique.Local
+                                        Data.Unique.Global
+                                        Data.Unique.LocalSTM
+                                        Data.Unique.GlobalSTM

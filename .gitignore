@@ -1,0 +1,9 @@
+*~
+\#*
+.*
+!.gitignore
+
+dist
+doc
+*.hi
+*.o
